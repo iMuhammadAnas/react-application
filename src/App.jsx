@@ -12,7 +12,7 @@ class Mainpage extends Component {
       const f = await fetch('https://dummyjson.com/users');
       const data = await f.json();
       this.setState({ users: data.users });
-    }, 0);
+    }, 2000);
   }
 
   render() {
@@ -22,16 +22,24 @@ class Mainpage extends Component {
           <div className='row' key={el.id} >
             <div className="colum">
               <div className='card'>
-                  <img className='img1' src={el.image} alt="" />
-                  <p><b>Name : </b>{el.firstName} {el.lastName}</p>
-                  <p><b>Email : </b>{el.email}</p>
-                  <p><b>Phone : </b>{el.phone}</p>
-                  <p><b>age : </b>{el.age}</p>
-                  <p><b>Gender : </b>{el.gender}</p>
-                  <button>Show More</button>
+                <img className='img1' src={el.image} alt="" />
+                <p><b>Name : </b>{el.firstName} {el.lastName}</p>
+                <p><b>Email : </b>{el.email}</p>
+                <p><b>Phone : </b>{el.phone}</p>
+                <p><b>age : </b>{el.age}</p>
+                <p><b>Gender : </b>{el.gender}</p>
+                <button>Show More</button>
               </div>
             </div>
-          </div>) : 'Loading...!'}
+          </div>) :
+          <ul>
+            <li class="a"></li>
+            <li class="b"></li>
+            <li class="c"></li>
+            <li class="d"></li>
+            <li class="e"></li>
+          </ul>
+        }
       </div>
     );
   }
