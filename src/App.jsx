@@ -32,13 +32,9 @@ class Mainpage extends Component {
               </div>
             </div>
           </div>) :
-          <ul>
-            <li class="a"></li>
-            <li class="b"></li>
-            <li class="c"></li>
-            <li class="d"></li>
-            <li class="e"></li>
-          </ul>
+          <div className="loading">
+            <div className="loader">Loading...</div>
+          </div>
         }
       </div>
     );
