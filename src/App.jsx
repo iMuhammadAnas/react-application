@@ -29,11 +29,11 @@ class Mainpage extends Component {
                 <p><b>Phone : </b>{el.phone}</p>
                 <p><b>age : </b>{el.age}</p>
                 <p><b>Gender : </b>{el.gender}</p>
-                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">More About {el.firstName}</button>
+                <button data-bs-toggle="modal" data-bs-target={"#staticBackdrop" + el.id} >More About {el.firstName}</button>
               </div>
             </div>
 
-            <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div className="modal fade" id={"staticBackdrop" + el.id} data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header">

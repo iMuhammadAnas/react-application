@@ -53,6 +53,14 @@ button {
     border-radius: 20px;
     font-size: 15px;
     text-align: center;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgb(180, 180, 180);
+    color: black;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 .mf {
